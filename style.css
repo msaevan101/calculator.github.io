@@ -1,0 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+.calculator
+{
+    position: relative;
+    display: grid;
+    cursor: pointer;
+    box-shadow:  22px 22px 44px #040a0d, 
+             -22px -22px 44px #0e2835;
+    border: 2px solid white;
+}
+
+.calculator .value
+{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: 2px solid black;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.calculator span
+{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow:  5px 5px 10px #051015, 
+             -5px -5px 10px #134055;
+}
+
+.calculator span:hover
+{
+    box-shadow: inset 6px 6px 12px #051015, 
+            inset -6px -6px 12px #134055;
+}
+
+.calculator span:active
+{
+    background: #02023265;
+    color: #111;
+}
+
+.calculator span.clear
+{
+    grid-column: span 2;
+    width: 120px;
+    background: #03b1ff;
+}
+
+.calculator span.clear:hover
+{
+    box-shadow: inset 6px 6px 12px #014766, 
+            inset -6px -6px 12px #05ffff;
+}
+
+.calculator span.plus
+{
+    grid-row: span 2;
+    height: 120px;
+}
+
+.calculator span.equal
+{
+    background: green;
+}
+
+.calculator span.equal:hover
+{
+    box-shadow: inset 7px 7px 6px #006400, 
+            inset -7px -7px 6px #00a200;
+}
