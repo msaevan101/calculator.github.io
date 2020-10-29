@@ -82,7 +82,7 @@ body
 
 .calculator span.equal
 {
-    background: green;
+    background: skyblue;
 }
 
 .calculator span.equal:hover
